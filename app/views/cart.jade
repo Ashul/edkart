@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    title cart
+  body
+    section.container
+        .product
+            h1 All Products 
+            each singleProduct in product
+              ul
+                li 
+                    p Product Name - 
+                      a(href="http://localhost:8000/product/"+"#{singleProduct.id}") #{singleProduct.productName}
+                    p Price - #{singleProduct.price}
+                    p 
+                      a(href="http://localhost:8000/product/cart/"+"#{singleProduct.id}") Add to Cart </br>
+                      a(href="http://localhost:8000/product/remove/"+"#{singleProduct.id}") remove from Cart
+  
+  

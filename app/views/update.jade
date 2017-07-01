@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    title signup
+  body
+    section.container
+        .login
+            h1 Reset Password 
+        form(method='post', action='http://localhost:8000/user/update')
+           
+            
+            p
+              input(type='email', name='email' value='', placeholder='email', required='')
+            
+            p
+              input(type='password', name='password' value='', placeholder='password', required='')
+           
+          
+            p.submit
+              input(type='submit', name='', value='update' )
+            
